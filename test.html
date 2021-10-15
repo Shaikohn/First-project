@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="es">
+<head>
+     <title>Galería</title>
+     <meta name="description" content="En esta página vamos a probar muchas boludeces.">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+     <meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+     <link rel="icon" type="image/png" href="/fotos/favicon-ico.jpg">
+     <link rel="stylesheet" type="text/css" href="/css/styles.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link href="css/lightbox.min.css" rel="stylesheet"/>
+     <script src="/js/lightbox-plus-jquery.min.js"></script>
+     <script src="/js/javascript.js" language="javascript" type="text/javascript"></script>
+     <script type="text/javascript" src='https://www.google.com/recaptcha/api.js'></script>
+     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177280702-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-177280702-1');
+</script>
+</head>
+<body>
+<!-- MENÚ -->
+<div class="nav">
+    <a href="index"><img class="shai" src="/fotos/logo.png"></a>
+  <div class="topnav" id="myTopnav">
+    <a href="index" id="celu">Inicio</a>
+    <a class="activo" href="test">Galería</a>
+    <a href="otros/otros">Info</a>
+    <a class="icon" href="javascript:void(0);" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+    <a href="/english/homepage" style="margin-left: 90px; margin-top: 17px;"><img class="flag" src="/fotos/flag.png" alt="English" title="English"></a>
+</div>
+</div>
+     <div id="galeria"><div style="width: 100px;"><p class="palabra-galeria">GALERÍA</p></div></div>
+<!-- GALERÍA -->
+<div class="celular">
+  <div class="gallery">
+    <a data-lightbox="galeria" data-title="Cactus" href="/fotos/galeria/foto1.jpg">
+      <img alt="Cactus" src="/fotos/galeria/foto1.jpg" title="Cactus">
+    </a>
+    <div class="desc">Lorem ipsum</div>
+  </div>
+</div>
+<div class="celular">
+  <div class="gallery">
+    <a data-lightbox="galeria" data-title="Maceta dorada" href="/fotos/galeria/foto2.jpg">
+      <img alt="Maceta dorada" src="/fotos/galeria/foto2.jpg" title="Maceta dorada">
+    </a>
+    <div class="desc">Lorem ipsum</div>
+  </div>
+</div>
+<div class="celular">
+  <div class="gallery">
+    <a data-lightbox="galeria" data-title="Cactus" href="/fotos/galeria/foto3.jpg">
+      <img alt="Cactus" src="/fotos/galeria/foto3.jpg" title="Cactus">
+    </a>
+    <div class="desc">Lorem ipsum</div>
+  </div>
+</div>
+<div class="celular">
+  <div class="gallery">
+    <a data-lightbox="galeria" data-title="Cactus" href="/fotos/galeria/foto4.jpg">
+      <img alt="Cactus" src="/fotos/galeria/foto4.jpg" title="Cactus">
+    </a>
+    <div class="desc">Lorem ipsum</div>
+  </div>
+</div>
+<div class="img-zoom-container">
+  <img id="myimage" src="/fotos/galeria/foto4.jpg" width="300" height="240">
+  <div id="myresult" class="img-zoom-result"></div>
+</div>
+<div class="clearfix"></div>
+<!-- FORMULARIO -->
+     <form action="/php/form.php" class="pupu" method="post" onsubmit ="return validar();">
+         <div class="fondo">
+              <h1 class="titulo">Contacto</h1>
+              <div id="error"></div>
+         <div>
+            <div>
+              <input class="sol" id="nombre" name="nombre" placeholder="Nombre" type="text">
+              <input class="sol" id="apellido" name="apellido" placeholder="Apellido" type="text">
+            </div>
+            <div>
+              <input class="sol" id="correo" name="correo" placeholder="Correo electrónico" type="text">
+              <input class="sol" id="telefono" name="telefono" placeholder="Teléfono" type="text">
+            </div>
+              <textarea class="sol" cols="100" id="mensaje" name="mensaje" onkeyup="count_down(this);" placeholder="Mensaje (máximo 50 caracteres)" rows="4"></textarea><br>
+                <span class="contador" id="count">50</span>
+         </div>
+            <div class="text-xs-center">
+              <div class="g-recaptcha" data-sitekey="6LclzMUZAAAAAG0tX_MzE7uV6JVjHSwX6r-_nu26"></div>
+            </div>
+              <input id="submit" name="grecaptcha.execute" type="submit" value="Enviar">
+         </div>
+     </form>
+<script>
+// Initiate zoom effect:
+imageZoom("myimage", "myresult");
+</script>
+   <div id="footer">
+          <div id="footer-in">
+               <div class="footer-col">
+                    <span class="title-footer"><a href="/"><img src="/fotos/logo.png" alt="Shai" title="SHAI"></a></span>
+                    <div class="foot-separator"></div>
+                    <p class="text-footer">Una página dedicada a las plantas, especialmente a los cactus y suculentas.</p>
+                    <ul id="foot-col-1">
+                         <li><img src="https://www.bahelitours.com/dev/img/arrow-right-blue.png" alt="Inicio" title="Inicio"> <a class="hover-blue" href="index">Inicio</a></li>
+                         <li><img src="https://www.bahelitours.com/dev/img/arrow-right-blue.png" alt="Galería" title="Galería"> <a class="hover-blue" href="test">Galería</a></li>
+                         <li><img src="https://www.bahelitours.com/dev/img/arrow-right-blue.png" alt="Info" title="Info"> <a class="hover-blue" href="otros/otros">Info</a></li>
+                    </ul>
+               </div>
+               <div class="footer-col-2">
+                    <span class="title-footer">CONTACTO</span>
+                    <div class="foot-separator"></div>
+                    <p class="text-footer">Estamos a su disposición para consultas y reservas las 24 horas del día, todos los días del año, a través de los siguientes canales:</p>
+                    <ul id="foot-col-2">
+                         <li><img src="https://www.bahelitours.com/img/contact-form-icon.png" alt="Formulario" title="Formulario"> <a class="hover-blue" href="#contacto">Formulario de contacto</a></li>
+                         <li><img src="https://www.bahelitours.com/img/mail-icon-blue.png" alt="Email" title="Email"><a class="hover-blue" href="mailto:contacto@shai.com.ar">contacto@shai.com.ar</a></li>
+                    </ul>
+               </div>
+               <div class="footer-col">
+                    <span class="title-footer">UBICACIÓN</span>
+                    <div class="foot-separator"></div>
+                    <p class="text-footer">Página creada en la Argentina.</p>
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26083836.754593752!2d-81.63270780954898!3d-37.05600320152319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf5f5fdc667%3A0x3d2f77992af00fa8!2sArgentina!5e0!3m2!1ses!2sar!4v1616671551772!5m2!1ses!2sar" height="200" width="350"; style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div style="clear: both;"></div>
+     </div>
+</body>
+</html>
