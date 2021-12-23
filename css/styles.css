@@ -3,8 +3,20 @@
 
 /* font-family: 'Roboto', sans-serif;
                 'Courgette', cursive; */
+                
+#word-width {
+             width: 100px;
+             }
+                
+#flag-position {
+                margin-left: 90px; 
+                margin-top: 17px;
+                }
 
-#dogs {
+
+/* PLANT´S SELECTOR */
+
+#cactus{
        background-color: #fff;
        color: #444;
        cursor: pointer;
@@ -20,7 +32,7 @@
        width: 300px;
       }
 
-.especie {
+.species {
           background: #0e7925; 
           color: #ffff;
           font-family: 'alataregular';
@@ -31,18 +43,25 @@
           text-align: center;
           }
           
-.planta {
+.options {
+          display: none;
+          margin-left: 20px;
+          margin-top: -120px;
+          width: 300px; 
+          }
+          
+.plant {
          height: 200px;
          object-fit: cover;
          width: 300px;
          }
-         
+
 select {
         margin-bottom: 20px;
         margin-left: 20px;
         }
 
-.ubicacion1 {
+.condition {
             background: #46a75b; 
             color: #ffff;
             font-size: 28px;
@@ -53,7 +72,7 @@ select {
             text-align: center;
             }
           
-.ubicacion2 {
+.data {
             background: #46a75b; 
             color: #ffff;
             font-size: 22px;
@@ -63,22 +82,23 @@ select {
             }
             
 @media only screen and (max-width: 350px) {
-                                           #golden {
+                                           #op1 {
                                                     width: 250px;
                                                    }
-                                           #labrador {
+                                           #op2 {
                                                     width: 250px;
                                                      }
-                                           #pointer {
+                                           #op3 {
                                                     width: 250px;
                                                     }
-                                           #bulldog {
+                                           #op4 {
                                                     width: 250px;
                                                     }
                                                     }
 
 
-/* Formulario */
+/* FORM */
+
 
 #error {
         background: #ff0000;
@@ -90,12 +110,6 @@ select {
         transition: all 0.5s ease;
         }
 
-#mensaje {
-          height: 130px;
-          margin-bottom: 0;
-          width: 722px;
-          }
-          
 #message {
           height: 130px;
           margin-bottom: 0;
@@ -116,7 +130,30 @@ select {
          width: 200px;
          }
          
-.contador {
+.background {
+       background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20190223/ourmid/pngtree-yellow-cactus-blossoming-yellow-flower-cartoon-background-flowercartoonbackground-image_66916.jpg");
+       background-repeat: no-repeat;
+       background-size: cover;
+       font-family: 'Yanone Kaffeesatz', sans-serif;;
+       margin: 0;
+       padding: 0;
+       text-align: center;
+       }
+       
+.background-rgba {
+        background-color: rgba(0,0,0,0.40);
+        }
+
+.contact {
+         color: #fff;
+         font-size: 80px;
+         font-weight: bold;
+         letter-spacing: 1px;
+         padding-top: 70px;
+         text-transform: uppercase;
+         }
+         
+.counter {
            
            color: #46ff0a;
            font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -126,26 +163,12 @@ select {
            }
            
 @media only screen and (max-width: 550px) {
-  .contador {
+  .counter {
             margin-left: 0;
             }
             }
 
-.fondo {
-        background-color: rgba(0,0,0,0.40);
-        }
-
-.pupu {
-       background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20190223/ourmid/pngtree-yellow-cactus-blossoming-yellow-flower-cartoon-background-flowercartoonbackground-image_66916.jpg");
-       background-repeat: no-repeat;
-       background-size: cover;
-       font-family: 'Yanone Kaffeesatz', sans-serif;;
-       margin: 0;
-       padding: 0;
-       text-align: center;
-       }
-
-.sol {
+.form-inputs {
       border: none;
       border-bottom: 1px solid gray;
       background-color: #fff;
@@ -161,29 +184,20 @@ select {
       }
       
 @media screen and (max-width: 768px) {
-         .sol
+         .form-inputs
         {
          height: auto;
          width: 100%;
          }
-         #mensaje
+         #message
          {
           height: auto;
           width: 80%;
           }
          }
 
-.titulo {
-         color: #fff;
-         font-size: 80px;
-         font-weight: bold;
-         letter-spacing: 1px;
-         padding-top: 70px;
-         text-transform: uppercase;
-         }
 
-
-/* Galería */
+/* GALLERY */
 
 div.desc {
           background-color: #0abb48;
@@ -210,9 +224,9 @@ div.gallery img {
                  object-position: top;
                  width: 100%;
                  }
-                 
-#galeria {
-          background: url(/fotos/portadas/galeria.jpg);
+
+#gallery {
+          background: url(/photos/covers/gallery.jpg);
           background-position: center bottom;
           background-size: cover;
           height: 300px;
@@ -221,8 +235,8 @@ div.gallery img {
           text-align: center;
          }
 
-#imagen-info {
-              background: url(/fotos/portadas/info.jpg);
+#info-img {
+              background: url(/photos/covers/info.jpg);
               background-position: center;
               background-size: cover;
               background-position-y: -120px;
@@ -233,7 +247,7 @@ div.gallery img {
               text-align: center;
                }
 
-.palabra {
+.homepage-esp {
           color: #fff;
           font-family: 'alataregular';
           font-size: 80px;
@@ -245,7 +259,7 @@ div.gallery img {
           left: 550px;
           }
           
-.word {
+.homepage-eng {
        color: #fff;
        font-family: 'alataregular';
        font-size: 80px;
@@ -258,17 +272,17 @@ div.gallery img {
        }
        
 @media only screen and (max-width: 550px) {
-  .word {
+  .homepage-eng {
             font-size: 65px;
             left: 0;
             top: -230px;
             }
-  #dogs {
+  #cactus {
         margin-top: -200px;
         }
             }
 
-.palabra-galeria {
+.gallery-title {
                   color: #fff;
                   font-family: 'alataregular';
                   font-size: 80px;
@@ -280,7 +294,7 @@ div.gallery img {
                   top: 110px;
                   }
        
-.palabra-info {
+.info-title {
                color: #fff;
                font-family: 'alataregular';
                font-size: 80px;
@@ -292,7 +306,7 @@ div.gallery img {
                 }
 
 @media only screen and (max-width: 320px) {
-  .palabra-galeria {
+  .gallery-title {
             font-size: 70px;
             left: 10px;
             top: 115px;
@@ -300,7 +314,7 @@ div.gallery img {
             }
             
 @media (min-width: 350px) and (max-width: 375px) {
-  .palabra-galeria {
+  .gallery-title {
             font-size: 70px;
             left: 35px;
             top: 115px;
@@ -308,7 +322,7 @@ div.gallery img {
             }
             
 @media (min-width: 400px) and (max-width: 411px) {
-  .palabra-galeria {
+  .gallery-title {
             font-size: 70px;
             left: 50px;
             top: 115px;
@@ -321,25 +335,25 @@ div.gallery img {
                  display: table;
                  }
 
-.celular {
+.cellphone {
           float: left;
           padding: 0 6px;
           width: 24.99999%;
           }
 
 @media only screen and (max-width: 768px) {
-  .celular {
+  .cellphone {
             margin: 6px 0;
             width: 49.99999%;
             }
             
-  #imagen-info, #imagen-inicio {
-                                background-position-y: 0;
-                                }
-                                }
+  #info-img, #imagen-inicio {
+                             background-position-y: 0;
+                             }
+                             }
 
 @media only screen and (max-width: 550px) {
-  .celular {
+  .cellphone {
             width: 100%;
             }
             }
@@ -349,7 +363,7 @@ div.gallery img {
    }
 
 
-/* General */
+/* GENERAL */
 
 body {
       background-color: #ffff;
@@ -420,7 +434,7 @@ ul {
                                        }
                                        }
         
-.contenido {
+.contents {
           background-color: #fff;
           max-height: 0;
           overflow: hidden;
@@ -428,13 +442,13 @@ ul {
           transition: max-height 0.2s ease-out;
           }
 
-.contenido p {
+.contents p {
             letter-spacing: 0.5px;
             line-height: 1.75;
             }
             
 @media screen and (max-width: 480px) {
-                                      .contenido p
+                                      .content p
                                      {
                                       font-size: 18px;
                                       }
@@ -497,7 +511,7 @@ ul {
                                       }
 
 
-/* Menú */
+/* Menu */
 
 
 .nav {
@@ -521,7 +535,7 @@ ul {
            text-decoration: none;
            }
 
-.topnav a.activo {
+.topnav a.actual {
                   background-color: #4CAF50;
                   color: #ffff;
                   }
@@ -532,7 +546,7 @@ ul {
                  }
 
 
-/* Menú para celulares */
+/* Cellphone´s menu */
 
 @media screen and (max-width: 768px) {.flag
         {
@@ -547,7 +561,7 @@ ul {
                }
 
 @media screen and (max-width: 768px) {
-  #celu {
+  #mobile {
          margin-top: 100px;
          }
          
@@ -580,9 +594,9 @@ ul {
                             }
                             }
                         
-/* Logo */
+/* LOGO */
 
-.shai {
+.logo {
        display: inline-block;
        float: left;
        height: 60px;
@@ -604,13 +618,13 @@ ul {
 @media screen and (max-width: 768px) {form
          {width: 100%;
          }
-         .pupu
+         .background
          {width: 100%;
          }
-         .shai {
+         .logo {
        text-align: center;;
        }
-       .sol {
+       .form-inputs {
          width: 80%;
        }
          }
@@ -640,6 +654,8 @@ ul {
                  text-align: center;
                  }
                  
+/* ZOOM */
+
 #myimage {
           margin-left: 20px;
           margin-top: 20px; 
@@ -831,7 +847,7 @@ ul {
        {margin-bottom: -13px;
         }
         }
-        
+
 .content{
          box-shadow: 1px 1px 15px rgba(0,0,0,0.4);
          display: flex;
@@ -852,14 +868,14 @@ ul {
 
             
   @media only screen and (max-width: 375px) {
-  .palabra {
+  .homepage-esp{
             left: 50%;
             top: -250px;
             }
             }
             
   @media (min-width: 400px) and (max-width: 414px) {
-  .palabra {
+  .homepage-esp {
             left: 70%;
             top: -250px;
             }
@@ -885,7 +901,10 @@ ul {
 
 
 
-/* FUENTES */
+
+
+
+/* FONTS */
 
 @font-face {
     font-family: 'alataregular';
@@ -908,11 +927,3 @@ ul {
   font-weight: normal;
   font-style: normal;
 }
-
-
-
-
-
-
-
-

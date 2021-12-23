@@ -3,7 +3,7 @@ body.lb-disable-scrolling{
                           }
                           
 .lb-cancel{
-           background: url(../fotos/modal/loading.gif) no-repeat;
+           background: url(../photos/modal/loading.gif) no-repeat;
            display: block;
            height: 32px;
            margin: 0 auto;
@@ -47,7 +47,7 @@ body.lb-disable-scrolling{
 /* SIGNO DE X */
                        
 .lb-data .lb-close{
-                   background: url(../fotos/modal/close.png) top right no-repeat;
+                   background: url(../photos/modal/close.png) top right no-repeat;
                    display: block;
                    filter: alpha(Opacity=70);
                    float: right;
@@ -103,7 +103,7 @@ body.lb-disable-scrolling{
 /* SIGNO DE > */
           
 .lb-nav a.lb-next{
-                  background: url(../fotos/modal/next.png) right 48% no-repeat;
+                  background: url(../photos/modal/next.png) right 48% no-repeat;
                   float: right;
                   opacity: 0.5;
                   right: 0;
@@ -128,7 +128,7 @@ body.lb-disable-scrolling{
 /* SIGNO DE < */
                         
 .lb-nav a.lb-prev{
-                  background: url(../fotos/modal/prev.png) left 48% no-repeat;
+                  background: url(../photos/modal/prev.png) left 48% no-repeat;
                   float: left;
                   left: 0;
                   opacity: 0.5;
