@@ -1,11 +1,11 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html lang="es">
+<html lang="en">
 <head> 
      <title>Information</title>
-     <meta name="description" content="En esta página vamos a probar muchas boludeces.">
+     <meta name="description" content="A page for plants.">
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
      <meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
-     <link rel="icon" type="image/png" href="/fotos/favicon-ico.jpg">
+     <link rel="icon" type="image/png" href="/photos/favicon-ico.jpg">
      <link rel="stylesheet" type="text/css" href="/css/styles.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <script src="/js/jquery-1.11.3.min.js" language="javascript" type="text/javascript"></script>
@@ -21,53 +21,52 @@
 </script>
 </head>
 <body>
-<!-- MENÚ -->
+<!-- MENU -->
 <div class="nav">
-    <a href="/english/homepage"><img class="shai" src="/fotos/logo.png"></a>
+    <a href="/english/homepage"><img class="logo" src="/photos/logo.png"></a>
   <div class="topnav" id="myTopnav">
-    <a href="/english/homepage" id="celu">Homepage</a>
+    <a href="/english/homepage" id="mobile">Homepage</a>
     <a href="/english/gallery">Gallery</a>
-    <a class="activo" href="/english/info">Info</a>
+    <a class="actual" href="/english/info">Info</a>
     <a class="icon" href="javascript:void(0);" onclick="myFunction()">
         <i class="fa fa-bars"></i>
     </a>
-    <a href="/index" style="margin-left: 90px; margin-top: 17px;"><img class="flag" src="/fotos/bandera.png" alt="Español" title="Español"></a>
+    <a href="/index" id="flag-position"><img class="flag" src="/photos/spanish.png" alt="Spanish" title="Spanish"></a>
 </div>
 </div>
-<div id="imagen-info"><p class="palabra-info">INFO</p></div>
+<div id="info-img"><p class="info-title">INFO</p></div
+<!-- INFO -->
      <div class="info-block-first">
           <span class="info-cat">SHAI</span>
           <div class="info-button">
                <button class="collapsible" type="button">About us</button>
-               <div class="contenido">
+               <div class="contents">
                     <p>Lorem Ipsum</p>
                </div>
           </div>
           <div class="info-button">
                <button class="collapsible" type="button">Our service</button>
-               <div class="contenido">
+               <div class="contents">
                     <p>Lorem Ipsum</p>
                </div>
           </div>
      </div>
-<!--      <a href="https://sellfy.com/p/[PRODUCT-KEY]/" id="[PRODUCT-KEY]" class="sellfy-buy-button sellfy-buy-button-custom"><img src="/fotos/logo.png"></a>
-<script src="https://sellfy.com/js/api_buttons.js"></script> -->
-<!-- FORMULARIO -->
-        <form action="/php/form.php" class="pupu" id="contacto" method="post" onsubmit ="return validate();">
-         <div class="fondo">
-              <h1 class="titulo">Contact form</h1>
+<!-- FORM -->
+        <form action="/php/form.php" class="background" method="post" onsubmit ="return validate();">
+         <div class="background-rgba">
+              <h1 class="contact">Contact form</h1>
               <div id="error"></div>
          <div>
             <div>
-              <input class="sol" id="name" name="name" placeholder="Name" type="text">
-              <input class="sol" id="lastname" name="lastname" placeholder="Lastname" type="text">
+              <input class="form-inputs" id="name" name="name" placeholder="Name" type="text">
+              <input class="form-inputs" id="lastname" name="lastname" placeholder="Lastname" type="text">
             </div>
             <div>
-              <input class="sol" id="email" name="email" placeholder="Email" type="text">
-              <input class="sol" id="cellphone" name="cellphone" placeholder="Cellphone" type="text">
+              <input class="form-inputs" id="email" name="email" placeholder="Email" type="text">
+              <input class="form-inputs" id="cellphone" name="cellphone" placeholder="Cellphone" type="text">
             </div>
-              <textarea class="sol" cols="100" id="message" name="message" onkeyup="count_down(this);" placeholder="Message (maximum 50 characters)" rows="4"></textarea><br>
-                <span class="contador" id="count">50</span>
+              <textarea class="form-inputs" cols="100" id="message" name="message" onkeyup="count_down(this);" placeholder="Message (maximum 50 characters)" rows="4"></textarea><br>
+                <span class="counter" id="count">50</span>
          </div>
             <div class="text-xs-center">
               <div class="g-recaptcha" data-sitekey="6LclzMUZAAAAAG0tX_MzE7uV6JVjHSwX6r-_nu26"></div>
@@ -75,10 +74,11 @@
               <input id="submit" name="grecaptcha.execute" type="submit" value="Send">
          </div>
      </form>
+<!-- FOOTER -->
      <div id="footer">
           <div id="footer-in">
                 <div class="footer-col">
-                    <span class="title-footer"><a href="/"><img src="/fotos/logo.png" alt="Shai" title="SHAI"></a></span>
+                    <span class="title-footer"><a href="/"><img src="/photos/logo.png" alt="Shai" title="SHAI"></a></span>
                     <div class="foot-separator"></div>
                     <p class="text-footer">A page dedicated to plants, especially cactus and succulents.</p>
                     <ul id="foot-col-1">

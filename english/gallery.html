@@ -1,11 +1,11 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html lang="es">
+<html lang="en">
 <head>
      <title>Gallery</title>
-     <meta name="description" content="En esta página vamos a probar muchas boludeces.">
+     <meta name="description" content="A page for plants.">
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
      <meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
-     <link rel="icon" type="image/png" href="/fotos/favicon-ico.jpg">
+     <link rel="icon" type="image/png" href="/photos/favicon-ico.jpg">
      <link rel="stylesheet" type="text/css" href="/css/styles.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <link href="css/lightbox.min.css" rel="stylesheet"/>
@@ -22,74 +22,75 @@
 </script>
 </head>
 <body>
-<!-- MENÚ -->
+<!-- MENU -->
 <div class="nav">
-    <a href="/english/homepage"><img class="shai" src="/fotos/logo.png"></a>
+    <a href="/english/homepage"><img class="logo" src="/photos/logo.png"></a>
   <div class="topnav" id="myTopnav">
-    <a href="/english/homepage" id="celu">Homepage</a>
-    <a class="activo" href="/english/gallery">Gallery</a>
+    <a href="/english/homepage" id="mobile">Homepage</a>
+    <a class="actual" href="/english/gallery">Gallery</a>
     <a href="/english/info">Info</a>
     <a class="icon" href="javascript:void(0);" onclick="myFunction()">
         <i class="fa fa-bars"></i>
     </a>
-    <a href="/index" style="margin-left: 90px; margin-top: 17px;"><img class="flag" src="/fotos/bandera.png" alt="Español" title="Español"></a>
+    <a href="/index" id="flag-position"><img class="flag" src="/photos/spanish.png" alt="Spanish" title="Spanish"></a>
 </div>
 </div>
-     <div id="galeria"><div style="width: 100px;"><p class="palabra-galeria">GALLERY</p></div></div>
-<!-- GALERÍA -->
-<div class="celular">
+     <div id="gallery"><div id="word-width"><p class="gallery-title">GALLERY</p></div></div>
+<!-- GALLERY -->
+<div class="cellphone">
   <div class="gallery">
-    <a data-lightbox="galeria" data-title="Cactus" href="/fotos/galeria/foto1.jpg">
-      <img alt="Cactus" src="/fotos/galeria/foto1.jpg" title="Cactus">
+    <a data-lightbox="galeria" data-title="Cactus" href="/photos/gallery/g1.jpg">
+      <img alt="Cactus" src="/photos/gallery/g1.jpg" title="Cactus">
     </a>
     <div class="desc">Lorem ipsum</div>
   </div>
 </div>
-<div class="celular">
+<div class="cellphone">
   <div class="gallery">
-    <a data-lightbox="galeria" data-title="Maceta dorada" href="/fotos/galeria/foto2.jpg">
-      <img alt="Maceta dorada" src="/fotos/galeria/foto2.jpg" title="Flowerpot">
+    <a data-lightbox="galeria" data-title="Maceta dorada" href="/photos/gallery/g2.jpg">
+      <img alt="Maceta dorada" src="/photos/gallery/g2.jpg" title="Flowerpot">
     </a>
     <div class="desc">Lorem ipsum</div>
   </div>
 </div>
-<div class="celular">
+<div class="cellphone">
   <div class="gallery">
-    <a data-lightbox="galeria" data-title="Cactus" href="/fotos/galeria/foto3.jpg">
-      <img alt="Cactus" src="/fotos/galeria/foto3.jpg" title="Cactus">
+    <a data-lightbox="galeria" data-title="Cactus" href="/photos/gallery/g3.jpg">
+      <img alt="Cactus" src="/photos/gallery/g3.jpg" title="Cactus">
     </a>
     <div class="desc">Lorem ipsum</div>
   </div>
 </div>
-<div class="celular">
+<div class="cellphone">
   <div class="gallery">
-    <a data-lightbox="galeria" data-title="Cactus" href="/fotos/galeria/foto4.jpg">
-      <img alt="Cactus" src="/fotos/galeria/foto4.jpg" title="Cactus">
+    <a data-lightbox="galeria" data-title="Cactus" href="/photos/gallery/g4.jpg">
+      <img alt="Cactus" src="/photos/gallery/g4.jpg" title="Cactus">
     </a>
     <div class="desc">Lorem ipsum</div>
   </div>
 </div>
+<!-- ZOOM -->
 <div class="img-zoom-container">
-  <img id="myimage" src="/fotos/galeria/foto4.jpg" width="300" height="240">
+  <img id="myimage" src="/photos/gallery/g4.jpg" width="300" height="240">
   <div id="myresult" class="img-zoom-result"></div>
 </div>
 <div class="clearfix"></div>
-<!-- FORMULARIO -->
-   <form action="/php/form.php" class="pupu" id="contacto" method="post" onsubmit ="return validate();">
-         <div class="fondo">
-              <h1 class="titulo">Contact form</h1>
+<!-- FORM -->
+   <form action="/php/form.php" class="background" method="post" onsubmit ="return validate();">
+         <div class="background-rgba">
+              <h1 class="contact">Contact form</h1>
               <div id="error"></div>
          <div>
             <div>
-              <input class="sol" id="name" name="name" placeholder="Name" type="text">
-              <input class="sol" id="lastname" name="lastname" placeholder="Lastname" type="text">
+              <input class="form-inputs" id="name" name="name" placeholder="Name" type="text">
+              <input class="form-inputs" id="lastname" name="lastname" placeholder="Lastname" type="text">
             </div>
             <div>
-              <input class="sol" id="email" name="email" placeholder="Email" type="text">
+              <input class="form-inputs" id="email" name="email" placeholder="Email" type="text">
               <input class="sol" id="cellphone" name="cellphone" placeholder="Cellphone" type="text">
             </div>
-              <textarea class="sol" cols="100" id="message" name="message" onkeyup="count_down(this);" placeholder="Message (maximum 50 characters)" rows="4"></textarea><br>
-                <span class="contador" id="count">50</span>
+              <textarea class="form-inputs" cols="100" id="message" name="message" onkeyup="count_down(this);" placeholder="Message (maximum 50 characters)" rows="4"></textarea><br>
+                <span class="counter" id="count">50</span>
          </div>
             <div class="text-xs-center">
               <div class="g-recaptcha" data-sitekey="6LclzMUZAAAAAG0tX_MzE7uV6JVjHSwX6r-_nu26"></div>
@@ -101,10 +102,11 @@
 // Initiate zoom effect:
 imageZoom("myimage", "myresult");
 </script>
+<!-- FOOTER -->
    <div id="footer">
           <div id="footer-in">
                 <div class="footer-col">
-                    <span class="title-footer"><a href="/"><img src="/fotos/logo.png" alt="Shai" title="SHAI"></a></span>
+                    <span class="title-footer"><a href="/"><img src="/photos/logo.png" alt="Shai" title="SHAI"></a></span>
                     <div class="foot-separator"></div>
                     <p class="text-footer">A page dedicated to plants, especially cactus and succulents.</p>
                     <ul id="foot-col-1">
