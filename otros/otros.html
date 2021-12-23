@@ -5,7 +5,7 @@
      <meta name="description" content="En esta página vamos a probar muchas boludeces.">
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
      <meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
-     <link rel="icon" type="image/png" href="/fotos/favicon-ico.jpg">
+     <link rel="icon" type="image/png" href="/photos/favicon-ico.jpg">
      <link rel="stylesheet" type="text/css" href="/css/styles.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <script src="/js/jquery-1.11.3.min.js" language="javascript" type="text/javascript"></script>
@@ -23,52 +23,50 @@
 <body>
 <!-- MENÚ -->
 <div class="nav">
-    <a href="index"><img class="shai" src="/fotos/logo.png"></a>
+    <a href="index"><img class="logo" src="/photos/logo.png"></a>
   <div class="topnav" id="myTopnav">
-    <a href="/index" id="celu">Inicio</a>
+    <a href="/index" id="mobile">Inicio</a>
     <a href="/test">Galería</a>
-    <a class="activo" href="otros">Info</a>
+    <a class="actual" href="otros">Info</a>
     <a class="icon" href="javascript:void(0);" onclick="myFunction()">
         <i class="fa fa-bars"></i>
     </a>
-    <a href="/english/homepage" style="margin-left: 90px; margin-top: 17px;"><img class="flag" src="/fotos/flag.png" alt="English" title="English"></a>
+    <a href="/english/homepage" id="flag-position"><img class="flag" src="/photos/english.png" alt="English" title="English"></a>
 </div>
 </div>
-<div id="imagen-info"><p class="palabra-info">INFO</p></div>
+<div id="info-img"><p class="info-title">INFO</p></div>
 <!-- INFO BUTTONS -->
      <div class="info-block-first">
           <span class="info-cat">SHAI</span>
           <div class="info-button">
                <button class="collapsible" type="button">Quiénes somos</button>
-               <div class="contenido">
+               <div class="contents">
                     <p>Lorem Ipsum</p>
                </div>
           </div>
           <div class="info-button">
                <button class="collapsible" type="button">Nuestro servicio</button>
-               <div class="contenido">
+               <div class="contents">
                     <p>Lorem Ipsum</p>
                </div>
           </div>
      </div>
-     <a href="https://sellfy.com/p/[PRODUCT-KEY]/" id="[PRODUCT-KEY]" class="sellfy-buy-button sellfy-buy-button-custom"><img src="/fotos/logo.png"></a>
-<script src="https://sellfy.com/js/api_buttons.js"></script>
 <!-- FORMULARIO -->
-         <form action="/php/form.php" class="pupu" method="post" onsubmit ="return validar();">
-         <div class="fondo">
-              <h1 class="titulo">Contacto</h1>
+     <form action="/php/form.php" class="background" method="post" onsubmit ="return validar();">
+         <div class="background-rgba">
+              <h1 class="contact">Contacto</h1>
               <div id="error"></div>
          <div>
             <div>
-              <input class="sol" id="nombre" name="nombre" placeholder="Nombre" type="text">
-              <input class="sol" id="apellido" name="apellido" placeholder="Apellido" type="text">
+              <input class="form-inputs" id="name" name="name" placeholder="Nombre" type="text">
+              <input class="form-inputs" id="lastname" name="lastname" placeholder="Apellido" type="text">
             </div>
             <div>
-              <input class="sol" id="correo" name="correo" placeholder="Correo electrónico" type="text">
-              <input class="sol" id="telefono" name="telefono" placeholder="Teléfono" type="text">
+              <input class="form-inputs" id="email" name="email" placeholder="Correo electrónico" type="text">
+              <input class="form-inputs" id="cellphone" name="cellphone" placeholder="Teléfono" type="text">
             </div>
-              <textarea class="sol" cols="100" id="mensaje" name="mensaje" onkeyup="count_down(this);" placeholder="Mensaje (máximo 50 caracteres)" rows="4"></textarea><br>
-                <span class="contador" id="count">50</span>
+              <textarea class="form-inputs" cols="100" id="message" name="message" onkeyup="count_down(this);" placeholder="Mensaje (máximo 50 caracteres)" rows="4"></textarea><br>
+                <span class="counter" id="count">50</span>
          </div>
             <div class="text-xs-center">
               <div class="g-recaptcha" data-sitekey="6LclzMUZAAAAAG0tX_MzE7uV6JVjHSwX6r-_nu26"></div>
@@ -79,7 +77,7 @@
      <div id="footer">
           <div id="footer-in">
                <div class="footer-col">
-                    <span class="title-footer"><a href="/"><img src="/fotos/logo.png" alt="Shai" title="SHAI"></a></span>
+                    <span class="title-footer"><a href="/"><img src="/photos/logo.png" alt="Shai" title="SHAI"></a></span>
                     <div class="foot-separator"></div>
                     <p class="text-footer">Una página dedicada a las plantas, especialmente a los cactus y suculentas.</p>
                     <ul id="foot-col-1">
