@@ -5,7 +5,7 @@
      <meta name="description" content="En esta página vamos a probar muchas boludeces.">
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
      <meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
-     <link rel="icon" type="image/png" href="/fotos/favicon-ico.jpg">
+     <link rel="icon" type="image/png" href="/photos/favicon-ico.jpg">
      <link rel="stylesheet" type="text/css" href="/css/styles.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <link href="css/lightbox.min.css" rel="stylesheet"/>
@@ -22,74 +22,74 @@
 </script>
 </head>
 <body>
-<!-- MENÚ -->
+<!-- MENU -->
 <div class="nav">
-    <a href="index"><img class="shai" src="/fotos/logo.png"></a>
+    <a href="index"><img class="logo" src="/photos/logo.png"></a>
   <div class="topnav" id="myTopnav">
-    <a href="index" id="celu">Inicio</a>
-    <a class="activo" href="test">Galería</a>
+   <a href="index" id="mobile">Inicio</a>
+    <a class="actual" href="test">Galería</a>
     <a href="otros/otros">Info</a>
     <a class="icon" href="javascript:void(0);" onclick="myFunction()">
         <i class="fa fa-bars"></i>
     </a>
-    <a href="/english/homepage" style="margin-left: 90px; margin-top: 17px;"><img class="flag" src="/fotos/flag.png" alt="English" title="English"></a>
+    <a href="/english/homepage" id="flag-position"><img class="flag" src="/photos/english.png" alt="English" title="English"></a>
 </div>
 </div>
-     <div id="galeria"><div style="width: 100px;"><p class="palabra-galeria">GALERÍA</p></div></div>
-<!-- GALERÍA -->
-<div class="celular">
+     <div id="gallery"><div id="word-width"><p class="gallery-title">GALERÍA</p></div></div>
+<!-- GALLERY -->
+<div class="cellphone">
   <div class="gallery">
-    <a data-lightbox="galeria" data-title="Cactus" href="/fotos/galeria/foto1.jpg">
-      <img alt="Cactus" src="/fotos/galeria/foto1.jpg" title="Cactus">
+    <a data-lightbox="gallery" data-title="Cactus" href="/photos/gallery/g1.jpg">
+      <img alt="Cactus" src="/photos/gallery/g1.jpg" title="Cactus">
     </a>
     <div class="desc">Lorem ipsum</div>
   </div>
 </div>
-<div class="celular">
+<div class="cellphone">
   <div class="gallery">
-    <a data-lightbox="galeria" data-title="Maceta dorada" href="/fotos/galeria/foto2.jpg">
-      <img alt="Maceta dorada" src="/fotos/galeria/foto2.jpg" title="Maceta dorada">
+    <a data-lightbox="galeria" data-title="Maceta dorada" href="/photos/gallery/g2.jpg">
+      <img alt="Maceta dorada" src="/photos/gallery/g2.jpg" title="Maceta dorada">
     </a>
     <div class="desc">Lorem ipsum</div>
   </div>
 </div>
-<div class="celular">
+<div class="cellphone">
   <div class="gallery">
-    <a data-lightbox="galeria" data-title="Cactus" href="/fotos/galeria/foto3.jpg">
-      <img alt="Cactus" src="/fotos/galeria/foto3.jpg" title="Cactus">
+    <a data-lightbox="galeria" data-title="Cactus" href="/photos/gallery/g3.jpg">
+      <img alt="Cactus" src="/photos/gallery/g3.jpg" title="Cactus">
     </a>
     <div class="desc">Lorem ipsum</div>
   </div>
 </div>
-<div class="celular">
+<div class="cellphone">
   <div class="gallery">
-    <a data-lightbox="galeria" data-title="Cactus" href="/fotos/galeria/foto4.jpg">
-      <img alt="Cactus" src="/fotos/galeria/foto4.jpg" title="Cactus">
+    <a data-lightbox="galeria" data-title="Cactus" href="/photos/gallery/g4.jpg">
+      <img alt="Cactus" src="/photos/gallery/g4.jpg" title="Cactus">
     </a>
     <div class="desc">Lorem ipsum</div>
   </div>
 </div>
 <div class="img-zoom-container">
-  <img id="myimage" src="/fotos/galeria/foto4.jpg" width="300" height="240">
+  <img id="myimage" src="/photos/gallery/g4.jpg" width="300" height="240">
   <div id="myresult" class="img-zoom-result"></div>
 </div>
 <div class="clearfix"></div>
-<!-- FORMULARIO -->
-     <form action="/php/form.php" class="pupu" method="post" onsubmit ="return validar();">
-         <div class="fondo">
-              <h1 class="titulo">Contacto</h1>
+<!-- FORM -->
+       <form action="/php/form.php" class="background" method="post" onsubmit ="return validar();">
+         <div class="background-rgba">
+              <h1 class="contact">Contacto</h1>
               <div id="error"></div>
          <div>
             <div>
-              <input class="sol" id="nombre" name="nombre" placeholder="Nombre" type="text">
-              <input class="sol" id="apellido" name="apellido" placeholder="Apellido" type="text">
+               <input class="form-inputs" id="name" name="name" placeholder="Nombre" type="text">
+              <input class="form-inputs" id="lastname" name="lastname" placeholder="Apellido" type="text">
             </div>
             <div>
-              <input class="sol" id="correo" name="correo" placeholder="Correo electrónico" type="text">
-              <input class="sol" id="telefono" name="telefono" placeholder="Teléfono" type="text">
+              <input class="form-inputs" id="email" name="email" placeholder="Correo electrónico" type="text">
+              <input class="form-inputs" id="cellphone" name="cellphone" placeholder="Teléfono" type="text">
             </div>
-              <textarea class="sol" cols="100" id="mensaje" name="mensaje" onkeyup="count_down(this);" placeholder="Mensaje (máximo 50 caracteres)" rows="4"></textarea><br>
-                <span class="contador" id="count">50</span>
+              <textarea class="form-inputs" cols="100" id="message" name="message" onkeyup="count_down(this);" placeholder="Mensaje (máximo 50 caracteres)" rows="4"></textarea><br>
+                <span class="counter" id="count">50</span>
          </div>
             <div class="text-xs-center">
               <div class="g-recaptcha" data-sitekey="6LclzMUZAAAAAG0tX_MzE7uV6JVjHSwX6r-_nu26"></div>
@@ -104,7 +104,7 @@ imageZoom("myimage", "myresult");
    <div id="footer">
           <div id="footer-in">
                <div class="footer-col">
-                    <span class="title-footer"><a href="/"><img src="/fotos/logo.png" alt="Shai" title="SHAI"></a></span>
+                    <span class="title-footer"><a href="/"><img src="/photos/logo.png" alt="Shai" title="SHAI"></a></span>
                     <div class="foot-separator"></div>
                     <p class="text-footer">Una página dedicada a las plantas, especialmente a los cactus y suculentas.</p>
                     <ul id="foot-col-1">
