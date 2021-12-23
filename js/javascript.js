@@ -12,78 +12,91 @@ function count_down(obj) {
                 element.style.color = '#46ff0a';
             }
         }
+        
+/* Collapsible buttons */
 
-/* RECAPTACHA */
+// toggle collapse of items in info section
 
-window.onload = function() {
-    var $recaptcha = document.querySelector('#g-recaptcha-response');
-
-    if($recaptcha) {
-        $recaptcha.setAttribute("required", "required");
-    }
-};
-
-function tabla() {
-        var dogs = document.getElementById("dogs");
-        var golden = document.getElementById("golden");
-        var labrador = document.getElementById("labrador");
-        var pointer = document.getElementById("pointer");
-        var bulldog = document.getElementById("bulldog");
-        golden.style.display = dogs.value == "1" ? "block" : "none";
-        labrador.style.display = dogs.value == "2" ? "block" : "none";
-        pointer.style.display = dogs.value == "3" ? "block" : "none";
-        bulldog.style.display = dogs.value == "4" ? "block" : "none";
-                  }
-
-
-/* FORMULARIO */
+$(document).ready(function() {
+      function toggleContent(content) {
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + 'px';
+        }
+      }
+  
+      // collapse all open content
+      function collapseAllOpenContent() {
+       const colls = document.getElementsByClassName('collapsible');
+        for (const coll of colls) {
+          if (coll.classList.contains('btnactive')) {
+            coll.classList.remove('btnactive');
+            toggleContent(coll.nextElementSibling);
+          }
+        }
+      }
+  
+      const colls = document.getElementsByClassName('collapsible');
+      for (const coll of colls) {
+        coll.addEventListener('click', function() {
+          if (!this.classList.contains('btnactive')) {
+            collapseAllOpenContent();
+          }
+          this.classList.toggle('btnactive');
+          toggleContent(this.nextElementSibling);
+        });
+      }
+        });
+        
+/* FORM */
 
 function validar(){
-  var nombre = document.getElementById("nombre").value;
-  var apellido = document.getElementById("apellido").value;
-  var correo = document.getElementById("correo").value;
-  var telefono = document.getElementById("telefono").value;
-  var mensaje = document.getElementById("mensaje").value;
+  var nombre = document.getElementById("name").value;
+  var apellido = document.getElementById("lastname").value;
+  var correo = document.getElementById("email").value;
+  var telefono = document.getElementById("cellphone").value;
+  var mensaje = document.getElementById("message").value;
 
   error.style.padding = "10px";
 
   var texto;
-  if(nombre.length < 1){
+  if(name.length < 1){
     texto = "Es necesario que coloque su nombre.";
     document.getElementById("error").innerHTML = texto;
     return false;
   }
-  if(apellido.length < 1){
+  if(lastname.length < 1){
     texto = "Es necesario que coloque su apellido.";
     document.getElementById("error").innerHTML = texto;
     return false;
   }
-   if(correo.length < 1){
+   if(email.length < 1){
     texto = "Es necesario que coloque su correo electrónico.";
     document.getElementById("error").innerHTML = texto;
     return false;
   }
-  if(correo.indexOf("@") == -1){
+  if(email.indexOf("@") == -1){
     texto = "Es necesario que coloque un correo electrónico válido.";
     document.getElementById("error").innerHTML = texto;
     return false;
   }
-  if(telefono.length < 1){
+  if(cellphone.length < 1){
     texto = "Es necesario que coloque su número de teléfono.";
     document.getElementById("error").innerHTML = texto;
     return false;
   }
-  if(telefono.length > 15){
+  if(cellphone.length > 15){
     texto = "Es necesario que coloque un número de teléfono válido.";
     document.getElementById("error").innerHTML = texto;
     return false;
   }
-  if(mensaje.length < 1){
+  if(message.length < 1){
     texto = "Es necesario que coloque un mensaje.";
     document.getElementById("error").innerHTML = texto;
     return false;
   }
-  if(mensaje.length > 50){
+  if(message.length > 50){
     texto = "El mensaje debe tener como máximo 50 caracteres.";
     document.getElementById("error").innerHTML = texto;
     return false;
@@ -158,43 +171,30 @@ function myFunction() {
   }
 }
 
+/* RECAPTCHA */
 
-/* Collapsible buttons */
+window.onload = function() {
+    var $recaptcha = document.querySelector('#g-recaptcha-response');
 
-// toggle collapse of items in info section
+    if($recaptcha) {
+        $recaptcha.setAttribute("required", "required");
+    }
+};
 
-$(document).ready(function() {
-      function toggleContent(content) {
-        if (content.style.maxHeight) {
-          content.style.maxHeight = null;
-        } else {
-          content.style.maxHeight = content.scrollHeight + 'px';
-        }
-      }
-  
-      // collapse all open content
-      function collapseAllOpenContent() {
-       const colls = document.getElementsByClassName('collapsible');
-        for (const coll of colls) {
-          if (coll.classList.contains('btnactive')) {
-            coll.classList.remove('btnactive');
-            toggleContent(coll.nextElementSibling);
-          }
-        }
-      }
-  
-      const colls = document.getElementsByClassName('collapsible');
-      for (const coll of colls) {
-        coll.addEventListener('click', function() {
-          if (!this.classList.contains('btnactive')) {
-            collapseAllOpenContent();
-          }
-          this.classList.toggle('btnactive');
-          toggleContent(this.nextElementSibling);
-        });
-      }
-        }); 
-        
+function table() {
+        var cactus = document.getElementById("cactus");
+        var op1 = document.getElementById("op1");
+        var op2 = document.getElementById("op2");
+        var op3 = document.getElementById("op3");
+        var op4 = document.getElementById("op4");
+        op1.style.display = cactus.value == "1" ? "block" : "none";
+        op2.style.display = cactus.value == "2" ? "block" : "none";
+        op3.style.display = cactus.value == "3" ? "block" : "none";
+        op4.style.display = cactus.value == "4" ? "block" : "none";
+                  }
+
+/* ZOOM */
+
 function imageZoom(imgID, resultID) {
   var img, lens, result, cx, cy;
   img = document.getElementById(imgID);
@@ -250,55 +250,3 @@ function imageZoom(imgID, resultID) {
     return {x : x, y : y};
   }
 }
- 
-/* OPERADORES LÓGICOS
-
-&&	logical and
-||	logical or
-!	logical not
-
-/* OPERADORES COMPARATIVOS
-
-==	equal to
-===	equal value and equal type
-!=	not equal
-!==	not equal value or not equal type
->	greater than
-<	less than
->=	greater than or equal to
-<=	less than or equal to
-?	ternary operator */
-
-/* OPERADORES ARITMETICOS
-
-+	Addition
--	Subtraction
-*	Multiplication
-**	Exponentiation
-/	Division
-%	Modulus
-++	Increment
---	Decrement */
-
-
-/* OPERADORES DE ASIGNACIÓN
-
-=
-+=
--=
-*=
-/=
-%=
-<<=
->>=
->>>=
-&=
-^=
-|=
-**= */ 
-
-
-
-
-
-
