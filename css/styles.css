@@ -3,15 +3,16 @@
 
 /* font-family: 'Roboto', sans-serif;
                 'Courgette', cursive; */
-                
-#word-width {
-             width: 100px;
-             }
-                
+
 #flag-position {
                 margin-left: 90px; 
                 margin-top: 17px;
                 }
+                
+#word-width {
+             width: 100px;
+             }
+            
 
 
 /* PLANT´S SELECTOR */
