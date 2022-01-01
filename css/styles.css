@@ -14,7 +14,12 @@
                 }
 
 
-/* PLANT´S SELECTOR */
+/* PLANTÂ´S SELECTOR */
+
+select {
+        margin-bottom: 20px;
+        margin-left: 20px;
+        }
 
 #cactus{
        background-color: #fff;
@@ -31,36 +36,7 @@
        text-align: left;
        width: 300px;
       }
-
-.species {
-          background: #0e7925; 
-          color: #ffff;
-          font-family: 'alataregular';
-          font-size: 30px;
-          font-variant: all-small-caps; 
-          font-weight: 700;
-          margin-bottom: 0;
-          text-align: center;
-          }
-          
-.options {
-          display: none;
-          margin-left: 20px;
-          margin-top: -120px;
-          width: 300px; 
-          }
-          
-.plant {
-         height: 200px;
-         object-fit: cover;
-         width: 300px;
-         }
-
-select {
-        margin-bottom: 20px;
-        margin-left: 20px;
-        }
-
+      
 .condition {
             background: #46a75b; 
             color: #ffff;
@@ -80,7 +56,32 @@ select {
             margin-bottom: 1px;
             text-align: center;
             }
-            
+      
+.options {
+          display: none;
+          margin-left: 20px;
+          margin-top: -120px;
+          width: 300px; 
+          }
+          
+.plant {
+         height: 200px;
+         object-fit: cover;
+         width: 300px;
+         }
+
+.species {
+          background: #0e7925; 
+          color: #ffff;
+          font-family: 'alataregular';
+          font-size: 30px;
+          font-variant: all-small-caps; 
+          font-weight: 700;
+          margin-bottom: 0;
+          text-align: center;
+          }
+
+
 @media only screen and (max-width: 350px) {
                                            #op1 {
                                                     width: 250px;
@@ -546,7 +547,7 @@ ul {
                  }
 
 
-/* Cellphone´s menu */
+/* CellphoneÂ´s menu */
 
 @media screen and (max-width: 768px) {.flag
         {
